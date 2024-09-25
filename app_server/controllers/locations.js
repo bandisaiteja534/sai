@@ -23,7 +23,7 @@ const homelist = (req, res) => {
         distance: "200m",
       },
      
-  };
+  });
 };
 const locationInfo = function (req, res) {
   res.render("location-info", {
