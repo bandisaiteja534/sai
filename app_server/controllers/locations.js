@@ -22,7 +22,7 @@ const homelist = (req, res) => {
         facilities: ["Travel packages",],
         distance: "200m",
       },
-     
+    ],
   });
 };
 const locationInfo = function (req, res) {
