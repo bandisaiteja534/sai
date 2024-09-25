@@ -9,17 +9,17 @@ const homelist = (req, res) => {
       "Discover the World, One Adventure at a Time!",
     locations: [
       {
-        name: "Ojas Services ",
-        address: "Suryapet, Available, Road N0.6",
+        name: "Veltra Services ",
+        address: "road no 6,Gawtham nagar,Hyderabad",
         rating: 4,
-        facilities: ["Milk", "Curd", "Sweets"],
+        facilities: ["Travel Packages around the world"],
         distance: "100m",
       },
       {
-        name: "Ojas Milk",
-        address: "Rock Town Colony, Available, 1-45",
+        name: "Veltra Services",
+        address: "Road no 4,Pune,Maharastra",
         rating: 4,
-        facilities: ["Fresh Milk", "Curd",],
+        facilities: ["Travel packages",],
         distance: "200m",
       },
      
@@ -31,7 +31,7 @@ const locationInfo = function (req, res) {
     pageHeader: { title: "Veltra Services" },
     sidebar: {
       context:
-        "is on Ojas because it has Milk and space to Eat the Sweets with your friends andnfamily and get some Joy.",
+        "it is Veltra because we make people easy to explore all over the world.",
       callToAction:
         "If you've been and you like it - or if you don't -➥please leave a review to help other people just like you.",
     },
@@ -39,7 +39,7 @@ const locationInfo = function (req, res) {
       name: "Hyderabad",
       address: "Boduppal, Available, Road N0.6",
       rating: 4,
-      facilities: ["Milk", "Curd", "Sweets"],
+      facilities: ["Travel packages"],
       coords: { lat: 51.455041, lng: -0.9690884 },
       openingTimes: [
         {
@@ -81,8 +81,8 @@ const locationInfo = function (req, res) {
 };
 const addReview = function (req, res) {
   res.render("location-review-form", {
-    title: "Review Ojas  on Ojas Services",
-    pageHeader: { title: "Review Ojas" },
+    title: "Review Veltra on Veltra Services",
+    pageHeader: { title: "Review Veltra" },
   });
 };
 module.exports = {
