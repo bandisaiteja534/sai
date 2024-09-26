@@ -20,6 +20,12 @@ const homelist = (req, res) => {
         rating: 4,
         facilities: ["covers every state in south india"],
       },
+      {
+        name: "Veltra Services",
+        address: "Mumbai",
+        rating: 4,
+        facilities: ["connects customer with top grade tour packages"],
+      },
     ],
   });
 };
