@@ -85,6 +85,96 @@ const locationInfo = function (req, res) {
       ],
     },
   });
+  name: "Veltra Services",
+      address: "Jublie hills,Hyderabad",
+      rating: 4,
+      facilities: ["covers every state in south india"],
+      coords: { lat: 51.455041, lng: -0.9690884 },
+      openingTimes: [
+        {
+          days: "Monday -Saturday",
+          opening: "5:00am",
+          closing: "9:00pm",
+          closed: false,
+        },
+        {
+          days: "Sunday",
+          opening: "4:00am",
+          closing: "9:00pm",
+          closed: false,
+        },
+      
+      ],
+      reviews: [
+        {
+          author: "Venky  ",
+          rating: 5,
+          timestamp: "10 August 2024",
+          reviewText:
+            "WooooooW",
+        },
+        {
+          author: "Pavani  ",
+          rating: 4,
+          timestamp: "08 July 2024",
+          reviewText:
+            "its a memorable trip",
+        },
+        {
+          author: " Sai snigdha ",
+          rating: 3,
+          timestamp: "07 June 2023",
+          reviewText:
+            "pocket friendly ",
+        },
+      ],
+    },
+  });
+name: "Veltra Services",
+      address: "Mumbai",
+      rating: 4,
+      facilities: ["connects customer with top grade tour packages"],
+      coords: { lat: 51.455041, lng: -0.9690884 },
+      openingTimes: [
+        {
+          days: "Monday -Saturday",
+          opening: "5:00am",
+          closing: "9:00pm",
+          closed: false,
+        },
+        {
+          days: "Sunday",
+          opening: "4:00am",
+          closing: "9:00pm",
+          closed: false,
+        },
+      
+      ],
+      reviews: [
+        {
+          author: "Srikanth  ",
+          rating: 5,
+          timestamp: "14 Nov 2024",
+          reviewText:
+            "Good service.",
+        },
+        {
+          author: "Manjula  ",
+          rating: 4,
+          timestamp: "07 July 2024",
+          reviewText:
+            "comfortable traveling",
+        },
+        {
+          author: "Meena ",
+          rating: 3,
+          timestamp: "21 June 2020",
+          reviewText:
+            "experience was Great",
+        },
+      ],
+    },
+  });
 };
 const addReview = function (req, res) {
   res.render("location-review-form", {
