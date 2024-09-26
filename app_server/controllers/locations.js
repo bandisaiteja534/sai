@@ -85,6 +85,7 @@ const locationInfo = function (req, res) {
       ],
     },
   });
+};
 const addReview = function (req, res) {
   res.render("location-review-form", {
     title: "Review Veltra  on Veltra Services",
