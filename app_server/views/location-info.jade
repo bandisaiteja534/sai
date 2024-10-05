@@ -5,14 +5,14 @@ block content
   .row.banner
     .col-12
       h1= pageHeader.title
-  
+
   .row
     .col-12.col-lg-9
       .row
         .col-12.col-md-6
           p.rating
             +outputRating(location.rating)
-          p Begumpet,hyderabad
+          p Begumpet, Hyderabad
       
       .card.card-primary
         .card-block
@@ -33,13 +33,19 @@ block content
               i.fa.fa-check
               | &nbsp;#{facility}
               | &nbsp;
-      
+
+      .col-12.col-md-6
+        .card.card-primary
+          .card-block
+            h2.card-title Image
+            img(src=location.imageUrl || 'stylesheets/yogi.jpg', alt='Image of #{location.name}', class='img-fluid rounded')
+
       .col-12.col-md-6.location-map
         .card.card-primary
           .card-block
             h2.card-title Location map
             img.img-fluid.rounded(src=`http://maps.googleapis.com/maps/api/staticmap?center=${location.coords.lat},${location.coords.lng}&zoom=17&size=400x350&sensor=false&markers=${location.coords.lat},${location.coords.lng}&key={googleAPIKey}&scale=2`)
-    
+
     .col-12
       .card.card-primary.review-card
         .card-block
@@ -54,7 +60,7 @@ block content
                 small.reviewTimestamp #{review.timestamp}
               .col-12
                 p !{(review.reviewText).replace(/\n/g, '<br/>')}
-    
+
     .col-12.col-lg-3
       p.lead #{location.name} #{sidebar.context}
       p= sidebar.callToAction
